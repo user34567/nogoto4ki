@@ -1,0 +1,63 @@
+{% extends 'base.html'%}
+
+{% block title%}
+Subscribes
+{% endblock title%}
+
+{% block link%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/sub.css') }}">
+{% endblock link%}
+
+{% block body%}
+
+<div class="main_div">
+    <div class="search_conteiner">
+        <form method="post">
+            <input name="search" id="search" type="text" placeholder="search" class="f1">
+            <input type="submit" value="Поиск" class="f1">
+        </form>
+    </div>
+    <div>
+        {% for user in users%}
+        <div class="user_block">
+            <div class="user_conteiner">
+                <a href="/profile/{{ user[2] }}">
+                    <div class="user_date">
+                        <div class="user_image_conteiner">
+                            <div class="user_image_gray_div">
+                                <div class="user_avatar">
+                                    <img src="https://nogoto4ki.herokuapp.com/static/avatars/{{ user[1] }}" class="sub_avatar">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_text_info_block">
+                            <div class="nickname_block">
+                                <h1 class="name_href">{{ user[0] }}</h1>
+                            </div>
+                            <div class="user_sub_info">
+                                <p>Подпищиков {{ user[3] }}</p>
+                                <p>Подписок {{ user[4] }}</p>
+                                <p>Общих подпищиков {{ user[6] }}</p>
+                                <p>Общих подписок {{ user[5] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock body%}
+
+
+
+
+
+<div>
+
+        <h3>{{ user[0] }}</h3>
+
+
+</div>

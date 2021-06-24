@@ -1,0 +1,16 @@
+{% extends 'formbase.html' %}
+
+{% block title %}
+Login
+{% endblock title %}
+{% block titlepage %}
+Login
+{% endblock titlepage %}
+ {% block input %}
+<input class="f1" type="email" name="email" id="email" placeholder="email"><br>
+<input class="f1" type="password" name="password" id="password" placeholder="Пароль"><br>
+<input class="f1" type="submit" value="Войти"><br>
+<p style="color: red">{{ mes }}</p>
+<a class="a1" href="/register"><h1>Register</h1></a>
+
+{% endblock input %}

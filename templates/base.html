@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}{% endblock title%}</title>
+{% block link%}{% endblock link%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/base.css') }}">
+
+</head>
+<body>
+<heder class="header123">
+    <div class="indexa">
+        <div class="div13">
+            <a href="/">
+                <img class="img1" src="{{ url_for('static', filename='/staticimg/img.png') }}">
+            </a>
+        </div>
+    </div>
+
+    <div class="news_conteiner">
+        {% for new in header['news'] %}
+        <div class="news">
+            <a href="{{ new['href'] }}" >
+                <div class="new_image">
+                    <img src="{{ new['src'] }}" class="img_for_now">
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="profilebut">
+        <a href="{{ header['a_href']}}" class="name_href">
+            <div class="grey_coneiner_for_name_button">
+                <div class="white_coneiner_for_name_button">
+                    <h1 class="name_button_text">{{header['a_name']}}</h1>
+                </div>
+            </div>
+        </a>
+    </div>
+</heder>
+{% block body%}{% endblock body%}
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,71 @@
+{% extends 'base.html'%}
+
+{% block title%}
+Post
+{% endblock title%}
+
+{% block link%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/post.css') }}">
+{% endblock link%}
+
+{% block body%}
+<div class="main_conteiner">
+    <div class="main_content">
+        <div class="likes_and_text_info">
+            <div class="user_info">
+                <a class="name_href" href="https://nogoto4ki.herokuapp.com/profile/{{ post[2] }}')">
+                    <h1 class="name_href">{{ post[6] }}</h1>
+                </a>
+            </div>
+            <div class="likes_and_dislikes_conteiner">
+                <div class="likes_conteiner">
+                    <h1 id="likes" >{{post[3]}}</h1>
+                    <a href="/like/{{post[0]}}">
+                        <img id="like" class="like_dislike" src="{{ likes[0] }} " onclick="like(this)">
+                    </a>
+                    <h6>Like</h6>
+                </div>
+                <div class="dislikes_conteiner">
+                    <h1 id="dislikes">{{post[4]}}</h1>
+                    <a href="/dislike/{{post[0]}}">
+                        <img id="dislike" class="like_dislike" src="{{ likes[1] }}" onclick="like(this)">
+                    </a>
+                    <h6>Dislike</h6>
+                </div>
+            </div>
+            <div class="text_info">
+                <h1>{{post[1]}}</h1>
+            </div>
+        </div>
+        <div class="all_photos">
+            <div class="photo_chose">
+                <div class="photo_items_conteiner">
+                    {% for src in src_list %}
+                    <div class="chose_photo_conteiner">
+                        <div class="chose_photo_img_conteiner">
+                            <img class="chose_img" src="{{ src }}"  onclick="myFunction3(this)">
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="main_photo">
+                <div class="main_photo_conteiner">
+                    <img src="{{ src_list[0] }}" id="big_img" class="main_img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    function myFunction3(im) {
+        big_im = document.getElementById("big_img")
+        big_im.src = im.src;
+        event.preventDefault();
+    }
+</script>
+{% endblock body%}

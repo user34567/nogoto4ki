@@ -1,0 +1,95 @@
+.main_div{
+    position: relative;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search_conteiner{
+    width: 800px;
+    height: 150px;
+    align-items: center;
+}
+.f1 {
+    text-align: center;
+    height: 80px;
+    width: 300px;
+    border: .069444vw solid #d1d1d6;
+    border-radius: .27777vw;
+    font-size: 1.1111vw;
+    padding: 0 1.11111vw;
+}
+.user_block{
+    height: 170px;
+    position: relative;
+    width: 800px;
+}
+.user_conteiner{
+    position: relative;
+    width: 800px;
+    height: 150px;
+    background: rgb(200,200,200);
+    border-radius: 5px;
+}
+.user_date{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    height: 140px;
+    width: 790px;
+    background: #fff;
+    border-radius: 5px;
+}
+.user_image_conteiner{
+    float: left;
+    width: 200px;
+    height: 140px;
+}
+
+.user_image_gray_div{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 120px;
+    width: 120px;
+    background: rgb(150,150,150);
+}
+
+.user_avatar{
+    position: relative;
+    top: 3px;
+    left: 3px;
+    height: 114px;
+    width: 114px;
+    background: #fff;
+}
+
+.sub_avatar {
+    height: 100%;
+    width: 100%;
+}
+
+.user_text_info_block{
+    height: 140px;
+    float: left;
+    width: 590px;
+}
+
+.nickname_block{
+    width: 370px;
+    height: 140px;
+    float: left;
+    text-align: left;
+}
+.name_href{
+    height: 100%;
+    color: #000;
+    max-height: 60px;
+    text-decoration: none;
+}
+.user_sub_info{
+    float: left;
+    height: 140px;
+    width: 220px;
+    color: #000;
+}

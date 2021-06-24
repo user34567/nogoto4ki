@@ -1,0 +1,58 @@
+.post_conteiner{
+position: relative;
+width: 25%;
+padding-top: 40%;
+background: #fff;
+float: left;
+}
+
+.post_data_conteiner{
+position: absolute;
+top: 3%;
+left: 3%;
+background: rgb(200,200,200);
+border-radius: 5%;
+height: 94%;
+width: 94%;
+}
+
+.post_data{
+background: #fff;
+top: 3%;
+left: 3%;
+height: 94%;
+width: 94%;
+border-radius: 5%;
+position: relative;
+}
+
+.post_photo_cont{
+position: relative;
+width: 100%;
+padding-top: 100%;
+}
+
+.post_photo_cont_2{
+position: absolute;
+border-radius: 5%;
+top: 5%;
+left: 5%;
+height: 90%;
+width: 90%;
+}
+
+.post_photo{
+height: 100%;
+width: 100%;
+border-radius: 5%;
+}
+
+.like_info{
+text-align: center;
+}
+
+.post_info{
+    font-family: monospace;
+    color: #000;
+     font-size: 20px;
+}

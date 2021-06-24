@@ -1,0 +1,28 @@
+.column_cont{
+    float: left;
+    width: 25%;
+    height: 10px;
+}
+.postimg{
+ width: 100%;
+ border-radius: 10%;
+}
+.gray_cont {
+    position: relative;
+    margin-top: 20px;
+
+    width: 90%;
+
+    border-radius: 10%;
+}
+
+.white_cont {
+    position: relative;
+    top:4px;
+    left: 3%;
+    bot: 4px;
+
+    width: 94%;
+    background: #fff;
+    border-radius: 10%;
+}

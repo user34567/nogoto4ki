@@ -1,0 +1,68 @@
+{% extends 'base.html'%}
+
+{% block title%}
+Profile
+{% endblock title%}
+
+{% block link%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/profile.css') }}">
+{% endblock link%}
+
+
+{% block body%}
+<div class="main_conteiner">
+    <div class="main_content">
+        <div class="div_photo_conteiner">
+            <div class="div_photo">
+                <img class="main_photo_img" src="{{ data['imgpath'] }}">
+            </div>
+        </div>
+        <div class="buttons_div">
+            <div class="name_div">
+                <h1 class="name_text"> {{data['username']}}</h1>
+            </div>
+            <div class="buttons_block">
+                <div class="gray_but_conteiner">
+                    <div class = "but_div">
+                        <a href="\subscribes\{{ data['id'] }}" class="name_href">
+                            <h1 class="name_text">Подписки {{ data['subscribes_count'] }}</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="gray_but_conteiner">
+                    <div class = "but_div">
+                         <a href="\subscribers\{{ data['id'] }}" class="name_href" >
+                            <h1 class="name_text">Подпищики {{ data['subscribers_count'] }}</h1>
+                         </a>
+                    </div>
+                </div>
+                <div class="gray_but_conteiner">
+                     <div class = "but_div">
+                         <a href="\posts/{{ data['id'] }}" class="name_href">
+                            <h1 class="name_text">Посты {{ data['posts_count'] }}</h1>
+                         </a>
+                    </div>
+                </div>
+                {% for but in data['buttons']%}
+                <div class="gray_but_conteiner">
+                    <div class = "but_div">
+                         <a href="{{ but['href']}}" class="name_href">
+                            <h1 class="name_text">{{ but['text'] }}</h1>
+                         </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+{% endblock body%}
+
+
+

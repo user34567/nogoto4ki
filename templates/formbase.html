@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/formbase.css') }}">
+
+</head>
+<body>
+<div class="div11">
+    <div class="div9">
+        <h1 class="classh1">{% block titlepage %}{% endblock titlepage %}</h1>
+    </div>
+    <div class="div8">
+        <div  class="div10" >
+            <img class="img4" src="{{ url_for('static',filename='staticimg/img.png') }}">
+        </div>
+        <div class="div7">
+            <form method="post">
+              {% block input %}
+                {% endblock input %}
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

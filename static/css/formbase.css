@@ -1,0 +1,77 @@
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    height: 50px;
+}
+.f11 {
+    text-align: center;
+    height: 50px;
+    min-height: 50px;
+    width: 300px;
+    min-width: 300px;
+    border: .069444vw solid #d1d1d6;
+    border-radius: .27777vw;
+    font-size: 30px;
+    padding: 0 1.11111vw;
+}
+.f1 {
+    text-align: center;
+    height: 50px;
+    min-height: 50px;
+    width: 300px;
+    min-width: 300px;
+    border: .069444vw solid #d1d1d6;
+    border-radius: .27777vw;
+    font-size: 30px;
+    padding: 0 1.11111vw;
+}
+
+.main_conteiner_form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.div11 {
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1016px;
+    min-width: 1016px;
+    border-radius: 40px;
+}
+
+.classh1 {
+font-family: Verdana, sans-serif;
+  text-shadow: 2px 2px 5px rgb(235, 117, 117);
+}
+
+.div9{
+margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+
+.div10  {
+position: relative;
+float: left;
+width: 50%;
+}
+.div8 {
+
+height: 800px;
+}
+
+.div7 {
+
+position: relative;
+float: left;
+    left: 5px;
+
+
+align-items: center;
+}
+
+.img4 {
+width: 100%;}

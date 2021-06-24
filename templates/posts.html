@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+
+{% block title%}
+Posts
+{% endblock title%}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/posts.css') }}">
+
+{% endblock link%}
+
+
+{% block body%}
+<div class="main_posts_conteiner">
+    {% for post in posts %}
+    <div class="post_conteiner">
+        <a href="https://nogoto4ki.herokuapp.com/post/{{ post[0] }}">
+            <div class="post_data_conteiner">
+                <div class="post_data">
+                    <div class="post_photo_cont">
+                        <div class="post_photo_cont_2">
+                            <img class="post_photo" src="https://nogoto4ki.herokuapp.com/static/posts/{{ post[4] }}">
+                        </div>
+                    </div>
+                    <div class="like_info">
+                        <p class="post_info">Нравиться {{ post[2] }}</p>
+                        <p class="post_info">Не нравиться {{ post[3] }}</p>
+                        <p class="post_info">Дата публикации {{ post[1] }}</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+
+
+
+
+</div>
+
+{% endblock body%}
+
+
+<h1>{{data['nickname']}}</h1>
+
+<div class="div1">
+
+        <img class="img1" src="{{ photos[i] }}">
+
+</div>
+

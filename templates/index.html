@@ -1,0 +1,63 @@
+{% extends 'base.html'%}
+
+{% block title%}
+Nogoto4ki
+{% endblock title%}
+
+{% block link%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/index.css') }}">
+{% endblock link%}
+
+{% block body%}
+
+<div class="column_cont">
+    {% for i in range(count) %}
+    <div class="gray_cont">
+        <a href="https://nogoto4ki.herokuapp.com/post/{{posts[i*4][0]}}">
+             <div class="white_cont">
+                <img class="postimg" src="https://nogoto4ki.herokuapp.com/static/posts/{{posts[i*4][1]}}">
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+<div class="column_cont">
+    {% for i in range(count) %}
+    <div class="gray_cont">
+        <a href="https://nogoto4ki.herokuapp.com/post/{{posts[i*4+1][0]}}">
+             <div class="white_cont">
+                <img class="postimg" src="https://nogoto4ki.herokuapp.com/static/posts/{{posts[i*4+1][1]}}">
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+<div class="column_cont">
+    {% for i in range(count) %}
+    <div class="gray_cont">
+        <a href="https://nogoto4ki.herokuapp.com/post/{{posts[i*4+2][0]}}">
+             <div class="white_cont">
+                <img class="postimg" src="https://nogoto4ki.herokuapp.com/static/posts/{{posts[i*4+2][1]}}">
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+<div class="column_cont">
+    {% for i in range(count) %}
+    <div class="gray_cont">
+        <a href="https://nogoto4ki.herokuapp.com/post/{{posts[i*4+3][0]}}">
+             <div class="white_cont">
+                <img class="postimg" src="https://nogoto4ki.herokuapp.com/static/posts/{{posts[i*4+3][1]}}">
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+
+
+
+{% endblock body%}

@@ -1,0 +1,91 @@
+.header123 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 18px rgba(0,0,0,.2);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+     background: rgb(255,255,255);
+}
+.indexa{
+height: 85px;
+}
+.div13 {
+height: 80px;
+width: 100px;
+}
+.img1
+{
+height: 100%;
+width: 100%;
+}
+.news_conteiner{
+margin-left: auto;
+margin-right: auto;
+float: left;
+
+
+}
+
+.news{
+    float: left;
+    width: 95px;
+    height: 85px;
+    background: #fff;
+}
+
+.new_image{
+
+height: 85px;
+width: 85px;
+fim
+
+}
+
+.img_for_now{
+height: 100%;
+width: 100%;
+}
+.profilebut{
+    width = 100%;
+    position: relative;
+    height: 85px;
+    float: left;
+}
+.name_href{
+    height: 100%;
+    color: #000;
+    max-height: 60px;
+    text-decoration: none;
+}
+.grey_coneiner_for_name_button {
+    background: rgb(180,180,180);
+    height: 85px;
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 10px;
+}
+
+.white_coneiner_for_name_button{
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: 77px;
+    min-height: 77px;
+    width: 92px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.name_button_text{
+    font-family: monospace;
+    font-color: #000;
+}
